@@ -77,11 +77,11 @@ export default {
       }
     },
     dec() {
-      this.width = this.width - parseInt(this.delta);
+      this.width = parseInt(this.width) - parseInt(this.delta);
       this.height = this.width / this.lock.ratio;
     },
     inc() {
-      this.width = this.width + parseInt(this.delta);
+      this.width = parseInt(this.width) + parseInt(this.delta);
       this.height = this.width / this.lock.ratio;
     },
     randomFill() {
